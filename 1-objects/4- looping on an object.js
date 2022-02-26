@@ -1,6 +1,6 @@
-const circle={
-    radius:1,
-    draw(){
+const circle = {
+    radius: 1,
+    draw() {
         console.log("drawing");
     }
 };
@@ -18,3 +18,8 @@ console.log("------------------------------------------");
 for (const circleEntries of Object.entries(circle)) {
     console.log(circleEntries);
 }
+
+if ("color" in circle) //the in operator
+    console.log("yes");
+else
+    console.log("no");
