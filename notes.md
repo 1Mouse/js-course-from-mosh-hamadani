@@ -5,3 +5,4 @@
 > - toFixed, round  
 > - string.split(), string.trim()
 > - Math, Date APIs
+> - splice method in strings and arrays
