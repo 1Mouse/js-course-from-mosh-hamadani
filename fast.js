@@ -1,18 +1,21 @@
 /**
  * @param {number[]} nums
- * @return {string[]}
+ * @param {number} target
+ * @return {number}
  */
-var summaryRanges = function (nums) {
-    let result=[];
-    for (let i = 0; i < nums.length; i++) {
-        let start=nums[i];
-        while(i<nums.length-1&&nums[i+1]-nums[i]==1){
-            i++;
-        }
-        if(start!=nums[i])
-            result.push(`${start}->${nums[i]}`);
-        else
-            result.push(start.toString());
-    }
-    return result;
+var searchInsert = function(nums, target) {
+    return binarySearch(nums,target,0,nums.length-1);
 };
+
+function binarySearch(nums,target,l,r){
+    if(l>r)
+        return l;
+
+    let mid=Math.floor(l + (r - l) / 2)//to avoid overflow
+    if(nums[mid]==target)
+        return mid;
+    if(nums[mid]>target)
+        return binarySearch(nums,target,l,mid-1);
+    if(nums[mid]<target)
+        return binarySearch(nums,target,mid+1,r);
+}
