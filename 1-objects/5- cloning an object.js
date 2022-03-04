@@ -12,3 +12,13 @@ another={...circle};  // spread operator
 console.log(another);
 
 
+delete another.draw; //delete a property
+console.log(another);
+
+another.draw=function (){ //adding a method or a property
+    console.log("drawing") ;
+}
+console.log(another);
+
+
+
