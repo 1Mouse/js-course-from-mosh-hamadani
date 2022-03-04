@@ -6,7 +6,8 @@ const circle = {
 };
 
 for (let circleKey in circle) {
-    console.log(circleKey);
+    if (typeof circle[circleKey] != 'function') //to exclude methods
+        console.log(circleKey, circle[circleKey]);
 }
 console.log("------------------------------------------");
 
