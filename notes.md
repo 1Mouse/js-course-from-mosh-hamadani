@@ -6,3 +6,7 @@
 > - string.split(), string.trim()
 > - Math, Date APIs
 > - splice method in strings and arrays
+
+>every object has a prototype except the root object  
+>> here are some tryouts:
+>> ![img.png](img.png)
