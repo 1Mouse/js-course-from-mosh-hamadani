@@ -10,3 +10,4 @@
 >every object has a prototype except the root object  
 >> here are some tryouts:
 >> ![img.png](img.png)
+
