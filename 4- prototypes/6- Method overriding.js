@@ -21,7 +21,8 @@ Circle.prototype.duplicate=function () {
     // do this
     //Shape.prototype.duplicate();
     // or you can also use call if the parent function has a 'this'
-    //Shape.prototype.duplicate.call(this);
+    Shape.prototype.duplicate.call(this);
+
     console.log("duplicate circle");
 }
 
