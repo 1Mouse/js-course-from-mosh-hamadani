@@ -2,7 +2,7 @@ class Circle {
     constructor(radius) {
         this.radius=radius;
     }
-    // Instance method
+    // prototype method
     draw(){
         console.log("drawing...");
     }
