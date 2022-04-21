@@ -11,3 +11,5 @@
 >> here are some tryouts:
 >> ![img.png](img.png)
 
+> transpiler(translator+compiler)--> Babel  
+> bundler --> WebPack
